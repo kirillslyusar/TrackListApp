@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		C9C6455D2A2212DB00342C35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6455C2A2212DB00342C35 /* AppDelegate.swift */; };
 		C9C6455F2A2212DB00342C35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6455E2A2212DB00342C35 /* SceneDelegate.swift */; };
-		C9C645612A2212DB00342C35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C645602A2212DB00342C35 /* ViewController.swift */; };
 		C9C645642A2212DB00342C35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C645622A2212DB00342C35 /* Main.storyboard */; };
 		C9C645662A2212DD00342C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C645652A2212DD00342C35 /* Assets.xcassets */; };
 		C9C645692A2212DD00342C35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C645672A2212DD00342C35 /* LaunchScreen.storyboard */; };
+		C9C645712A22198C00342C35 /* TrackListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C645702A22198C00342C35 /* TrackListViewController.swift */; };
+		C9C645732A22218C00342C35 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C645722A22218C00342C35 /* Track.swift */; };
+		C9C645752A22306D00342C35 /* TrackDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C645742A22306D00342C35 /* TrackDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9C645592A2212DB00342C35 /* TrackListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C6455C2A2212DB00342C35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9C6455E2A2212DB00342C35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C9C645602A2212DB00342C35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C9C645632A2212DB00342C35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9C645652A2212DD00342C35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9C645682A2212DD00342C35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9C6456A2A2212DD00342C35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C645702A22198C00342C35 /* TrackListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewController.swift; sourceTree = "<group>"; };
+		C9C645722A22218C00342C35 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		C9C645742A22306D00342C35 /* TrackDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +62,10 @@
 			children = (
 				C9C6455C2A2212DB00342C35 /* AppDelegate.swift */,
 				C9C6455E2A2212DB00342C35 /* SceneDelegate.swift */,
-				C9C645602A2212DB00342C35 /* ViewController.swift */,
+				C9C645702A22198C00342C35 /* TrackListViewController.swift */,
+				C9C645722A22218C00342C35 /* Track.swift */,
 				C9C645622A2212DB00342C35 /* Main.storyboard */,
+				C9C645742A22306D00342C35 /* TrackDetailsViewController.swift */,
 				C9C645652A2212DD00342C35 /* Assets.xcassets */,
 				C9C645672A2212DD00342C35 /* LaunchScreen.storyboard */,
 				C9C6456A2A2212DD00342C35 /* Info.plist */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9C645612A2212DB00342C35 /* ViewController.swift in Sources */,
 				C9C6455D2A2212DB00342C35 /* AppDelegate.swift in Sources */,
+				C9C645712A22198C00342C35 /* TrackListViewController.swift in Sources */,
+				C9C645752A22306D00342C35 /* TrackDetailsViewController.swift in Sources */,
 				C9C6455F2A2212DB00342C35 /* SceneDelegate.swift in Sources */,
+				C9C645732A22218C00342C35 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,9 +309,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.swiftBook.TrackListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -328,9 +339,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.swiftBook.TrackListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
